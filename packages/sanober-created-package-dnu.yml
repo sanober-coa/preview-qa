@@ -1,0 +1,19 @@
+config:
+  entities:
+    nodeTypes:
+      "151":
+        defaultStorageLocation: null
+        isDisabled: false
+      "152":
+        defaultStorageLocation: null
+        isDisabled: false
+      "156":
+        defaultStorageLocation: null
+        isDisabled: false
+  packageVariables: ""
+fileVersion: 1
+id: "@coalesce/sanober-package"
+name: sanober-created-package-dnu
+packageID: "@coalesce/sanober-package"
+releaseID: 33509d60-5076-4a1e-9a4c-9eb5890e5e43
+type: Package

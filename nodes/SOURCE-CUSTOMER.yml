@@ -3,7 +3,6 @@ id: daa63cf5-9e83-4b37-a952-43262a175b48
 name: CUSTOMER
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Customer data as defined by TPC-H
   locationName: SOURCE
@@ -161,12 +160,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SOURCE', 'CUSTOMER') }}
   name: CUSTOMER
   schema: ""
   sqlType: Source
-  table: CUSTOMER
   type: sourceInput
   version: 1
 type: Node

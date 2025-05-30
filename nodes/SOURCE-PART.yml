@@ -3,7 +3,6 @@ id: f65c0064-1a7e-4702-95f5-d170021c27d9
 name: PART
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Part data as defined by TPC-H
   locationName: SOURCE
@@ -180,12 +179,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SOURCE', 'PART') }}
   name: PART
   schema: ""
   sqlType: Source
-  table: PART
   type: sourceInput
   version: 1
 type: Node

@@ -3,7 +3,6 @@ id: 5d348217-e045-4441-bb24-215d8165f46d
 name: ORDERS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Orders data as defined by TPC-H
   locationName: SOURCE
@@ -180,12 +179,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SOURCE', 'ORDERS') }}
   name: ORDERS
   schema: ""
   sqlType: Source
-  table: ORDERS
   type: sourceInput
   version: 1
 type: Node

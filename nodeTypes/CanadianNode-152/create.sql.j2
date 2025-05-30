@@ -1,0 +1,6 @@
+{{ stage('Create Stage Table') }}
+CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
+  (
+    "MY_COLUMN" NUMBER(38,0),
+    "MY_COLUMN2" NUMBER(38, 0)
+  )

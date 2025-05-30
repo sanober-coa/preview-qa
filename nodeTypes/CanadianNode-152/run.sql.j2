@@ -1,0 +1,10 @@
+{{ stage('Insert Into Table') }}
+INSERT INTO {{ ref_no_link(node.location.name, node.name) }}
+(
+  "MY_COLUMN", 
+  "MY_COLUMN2"
+)
+VALUES(
+  3, 
+  4
+)

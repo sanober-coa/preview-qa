@@ -1,0 +1,365 @@
+fileVersion: 1
+id: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+name: DIM_Test-CN_CUSTOMER
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: Customer data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5680a958-c5cb-4ed5-9fb7-6a1371955ee8
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: |-
+          - Surrogate key generated for the customer dimension table, DIM_Test-CN_CUSTOMER.
+          - Serves as a unique identifier for each customer record in the dimension table.
+          - This key is used to link customer records between the dimension table and the fact table, FCT_Test-CN_CUSTOMER.
+        isSurrogateKey: true
+        name: DIM_Test-CN_CUSTOMER_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 178de90c-e442-4b74-9fdd-62b9c7d85f47
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER
+        description: |-
+          - System-generated column with no source.
+          - This column is a placeholder and might be used for future development or data analysis.
+        name: SYSTEM_COLUMN_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e6f9866-5f1b-4e3a-8bfe-855cafb984f5
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 692d3b04-1c4e-4c49-9ea2-eac52fbdf9a1
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER
+        description: |-
+          - System-generated column with no source.
+          - This column is a placeholder and might be used for future development or data analysis.
+        name: SYSTEM_COLUMN_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e095932b-4469-46e3-8aaa-227cdee5f099
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85283630-075d-48a3-b846-88aecd395365
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: |-
+          - Primary key for the customer dimension table, DIM_Test-CN_CUSTOMER.
+          - Represents the unique identifier for each customer, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used to link customer records across different tables and facilitate joins in data analysis.
+        name: C_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0aeb0fc-5885-4d3a-9ae2-3c943295bcd4
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ceeaed5-65a2-494b-a92c-7de21c081b44
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: VARCHAR(25)
+        description: |-
+          - Represents the name of the customer, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used in reports and analysis to identify and group customer data.
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e5e2aa38-cdd1-410d-8d1e-cc303eae3511
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 320bad5f-13bb-48c3-841c-d9c18b6e982f
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: VARCHAR(40)
+        description: |-
+          - Represents the physical address of the customer, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used in reports and analysis to locate and target customers based on their geographical location.
+        name: C_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10ed4ec6-46ec-4763-9e21-921fb9f987c8
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26eabbb5-a62e-43bd-bd9b-8e578cbd2b08
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER(38,0)
+        description: |-
+          - Foreign key referencing the NATION dimension table.
+          - Represents the nation to which the customer belongs, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used to categorize customers by nationality and analyze trends by region.
+        name: C_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3a81779-4e1a-4626-adb4-1c839b7d8b60
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5f167e7-e9d1-4267-92c9-649ecbd4f695
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: VARCHAR(15)
+        description: |-
+          - Represents the phone number of the customer, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used for customer communication and contact purposes, and might be analyzed to identify potential trends.
+        name: C_PHONE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c51a3561-c4c7-4d61-b26d-464eab98f894
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e09e5ab9-98b4-4daf-87c2-2a2c78f4eccb
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER(12,2)
+        description: |-
+          - Represents the account balance of the customer, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used to monitor customer spending and financial health, and may be used to calculate customer lifetime value (CLTV).
+        name: C_ACCTBAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a3a77850-9924-4535-a3a4-74f35d8b978f
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59bf0e55-4bc2-45b6-a94e-1cde2c954592
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: VARCHAR(10)
+        description: |-
+          - Represents the marketing segment to which the customer belongs, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used to segment customers based on their marketing preferences and target them with tailored campaigns.
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b13e3905-0748-4097-ba82-b2faf94ba6ba
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da7e32bb-cc8b-4c0b-a64c-fb037e712a5f
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: VARCHAR(117)
+        description: |-
+          - Represents additional comments or notes about the customer, sourced from the fact table, FCT_Test-CN_CUSTOMER.
+          - Used for internal reference and documentation, and may contain valuable insights for customer relationship management.
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd1704eb-4003-45df-bc17-5afb4d5df1dd
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b60ddc93-466f-4555-975c-d6a11f293740
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: TIMESTAMP
+        description: |-
+          - System-generated column with no source.
+          - Records the date and time when the customer record was initially created in the dimension table, DIM_Test-CN_CUSTOMER.
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3873e8d3-69cf-4575-b085-15fc217028bb
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2455f175-4741-4d78-a4bc-1de8bd23da96
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: TIMESTAMP
+        description: |-
+          - System-generated column with no source.
+          - Records the date and time when the customer record was last updated in the dimension table, DIM_Test-CN_CUSTOMER.
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 499b81ed-d292-4e04-a603-c562ca1042b3
+                stepCounter: 929c6080-f826-4fc4-9b47-5d0f4ce6a797
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3183c898-a1bc-4608-aa6a-8415c989db85
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: |-
+          - System-generated column with no source.
+          - Represents the version number of the customer record in the dimension table, DIM_Test-CN_CUSTOMER. Each update to the record increments the version number.
+        isSystemVersion: true
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf5c7bd1-c840-4233-9e1a-96eaadb5cd68
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: |-
+          - System-generated column with no source.
+          - Indicates if the customer record in the dimension table, DIM_Test-CN_CUSTOMER is currently active or inactive. A flag value of 'Y' represents an active customer, and 'N' represents an inactive customer.
+        isSystemCurrentFlag: true
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a9ede83-c750-4aca-89c6-04cae40d0e23
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: |-
+          - System-generated column with no source.
+          - Represents the date and time when the customer record became active in the dimension table, DIM_Test-CN_CUSTOMER.
+        isSystemStartDate: true
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04198033-75f1-4afc-8975-cd4cc372d66d
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: |-
+          - System-generated column with no source.
+          - Represents the date and time when the customer record will become inactive in the dimension table, DIM_Test-CN_CUSTOMER. It is set to '2999-12-31 00:00:00' by default, indicating that the record will remain active indefinitely.
+        isSystemEndDate: true
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f1109ef-31e0-4ade-ac38-12879a3db045
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: |-
+          - System-generated column with no source.
+          - Records the date and time when the customer record was initially created in the dimension table, DIM_Test-CN_CUSTOMER.
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8828f31b-ecff-4bf7-9103-c91058b97f80
+          stepCounter: 2cc3d887-4d95-4eaa-94be-8f7e89d5e9da
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: |-
+          - System-generated column with no source.
+          - Records the date and time when the customer record was last updated in the dimension table, DIM_Test-CN_CUSTOMER.
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: FCT_Test-CN_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'FCT_Test-CN_CUSTOMER') }} "FCT_Test-CN_CUSTOMER"
+        name: DIM_Test-CN_CUSTOMER
+        noLinkRefs: []
+  name: DIM_Test-CN_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: Dimension
+  type: sql
+  version: 1
+type: Node

@@ -3,7 +3,6 @@ id: 24f39706-31d6-4ee0-b41b-ffe16f8e81a0
 name: SUPPLIER
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Supplier data as defined by TPC-H
   locationName: SOURCE
@@ -142,12 +141,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SOURCE', 'SUPPLIER') }}
   name: SUPPLIER
   schema: ""
   sqlType: Source
-  table: SUPPLIER
   type: sourceInput
   version: 1
 type: Node
