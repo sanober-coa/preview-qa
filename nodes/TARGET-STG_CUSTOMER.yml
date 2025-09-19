@@ -137,7 +137,7 @@ operation:
           columnCounter: 14632e61-8838-49b8-b653-b277f5d8df15
           stepCounter: 87f7bdc6-f336-473a-95d1-b7eb3b96c3ed
         config: {}
-        dataType: ""
+        dataType: VARCHAR(10)
         defaultValue: ""
         description: ""
         keyColumnType: None
