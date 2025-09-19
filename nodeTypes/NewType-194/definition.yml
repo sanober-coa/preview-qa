@@ -1,0 +1,18 @@
+fileVersion: 1
+id: "194"
+isDisabled: false
+metadata:
+  defaultStorageLocation: null
+  error: null
+  nodeMetadataSpec: |-
+    capitalized: New Type
+    short: NEW
+    tagColor: gray
+    plural: New Types
+    config:
+    - groupName: 'My Config Group'
+      items: 
+      - type: multisourceToggle
+        enableIf: 'true'
+name: New Type
+type: NodeType

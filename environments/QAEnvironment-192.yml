@@ -1,5 +1,5 @@
 fileVersion: 1
-id: "121"
+id: "192"
 mappingDefinitions:
   SOURCE:
     database: SNOWFLAKE_SAMPLE_DATA
@@ -7,5 +7,5 @@ mappingDefinitions:
   TARGET:
     database: SANOBER_PREV_QA
     schema: SB_ENVIRONMENT
-name: New Environment
+name: QA Environment
 type: Environment

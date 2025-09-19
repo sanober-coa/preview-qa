@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "121"
+mappingDefinitions:
+  SOURCE:
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+  TARGET:
+    database: SANOBER_PREV_QA
+    schema: SB_ENVIRONMENT
+name: Reallly long long long long long long long long looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonggggggg
+type: Environment
