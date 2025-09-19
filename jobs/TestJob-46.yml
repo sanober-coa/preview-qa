@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "46"
+includeSelector: "{ location: SOURCE name: CUSTOMER } OR { location: TARGET name: STG_CUSTOMER } OR { location: TARGET name: DIM_CUSTOMER }"
+name: TestJob
+type: Job
